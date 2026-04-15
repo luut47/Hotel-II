@@ -1,4 +1,21 @@
 package com.example.hotellapp.activities;
 
-public class GuestHomeActivity {
+import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.hotellapp.R;
+import com.example.hotellapp.utils.SessionManager;
+
+public class GuestHomeActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.auth_activity_role_home);
+
+        SessionManager session = new SessionManager(this);
+        TextView tvTitle = findViewById(R.id.tvRoleTitle);
+        tvTitle.setText("Guest Home\nXin chào " + session.getFullName());
+    }
 }
