@@ -1,12 +1,17 @@
 package com.example.hotellapp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.example.hotellapp.R;
 import com.example.hotellapp.api.RetrofitClient;
@@ -23,6 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText edtFullName, edtEmail, edtPhone, edtPassword, edtCitizenId, edtAddress;
     private Button btnRegister;
+    private TextView tvGoLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +42,12 @@ public class RegisterActivity extends AppCompatActivity {
         edtCitizenId = findViewById(R.id.edtCitizenId);
         edtAddress = findViewById(R.id.edtAddress);
         btnRegister = findViewById(R.id.btnRegister);
-
+        tvGoLogin = findViewById(R.id.tvGoRegister);
         btnRegister.setOnClickListener(v -> doRegister());
+
+        tvGoLogin.setOnClickListener(v -> {
+            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+        });
     }
 
     private void doRegister() {
@@ -62,9 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
                     SessionManager sessionManager = new SessionManager(RegisterActivity.this);
                     sessionManager.saveLogin(
                             authResponse.getAccess_token(),
-                            authResponse.getUser().getRole_name(),
-                            authResponse.getUser().getFull_name(),
-                            authResponse.getUser().getEmail()
+                            authResponse.getUser()
                     );
 
                     Toast.makeText(RegisterActivity.this,

@@ -52,12 +52,7 @@ public class LoginActivity extends AppCompatActivity{
                     AuthResponse authResponse = response.body();
 
                     SessionManager sessionManager = new SessionManager(LoginActivity.this);
-                    sessionManager.saveLogin(
-                            authResponse.getAccess_token(),
-                            authResponse.getUser().getRole_name(),
-                            authResponse.getUser().getFull_name(),
-                            authResponse.getUser().getEmail()
-                    );
+                    sessionManager.saveLogin(authResponse.getAccess_token(),authResponse.getUser());
 
                     Toast.makeText(LoginActivity.this,
                             "Đăng nhập thành công: " + authResponse.getUser().getRole_name(),
