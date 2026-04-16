@@ -1,4 +1,4 @@
-package com.example.hotellapp.activities;
+package com.example.hotellapp.activities.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.hotellapp.R;
 import com.example.hotellapp.api.RetrofitClient;
-import com.example.hotellapp.model.AuthResponse;
-import com.example.hotellapp.model.LoginRequest;
+import com.example.hotellapp.model.auth.AuthResponse;
+import com.example.hotellapp.model.auth.LoginRequest;
 import com.example.hotellapp.utils.SessionManager;
 import com.example.hotellapp.utils.RoleRouter;
 import retrofit2.Call;

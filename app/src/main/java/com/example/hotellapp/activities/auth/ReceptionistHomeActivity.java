@@ -1,4 +1,4 @@
-package com.example.hotellapp.activities;
+package com.example.hotellapp.activities.auth;
 
 import android.os.Bundle;
 import android.widget.TextView;

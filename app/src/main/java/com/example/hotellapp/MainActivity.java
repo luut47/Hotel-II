@@ -10,8 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.hotellapp.activities.LoginActivity;
-import com.example.hotellapp.activities.RegisterActivity;
+import com.example.hotellapp.activities.auth.LoginActivity;
+import com.example.hotellapp.activities.auth.RegisterActivity;
 
 public class MainActivity extends AppCompatActivity {
 

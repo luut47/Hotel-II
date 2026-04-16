@@ -2,9 +2,9 @@ package com.example.hotellapp.utils;
 import android.content.Context;
 import android.content.Intent;
 
-import com.example.hotellapp.activities.AdminHomeActivity;
-import com.example.hotellapp.activities.GuestHomeActivity;
-import com.example.hotellapp.activities.ReceptionistHomeActivity;
+import com.example.hotellapp.activities.auth.AdminHomeActivity;
+import com.example.hotellapp.activities.auth.GuestHomeActivity;
+import com.example.hotellapp.activities.auth.ReceptionistHomeActivity;
 public class RoleRouter {
     public static void goToHomeByRole(Context context, String roleName) {
         Intent intent;

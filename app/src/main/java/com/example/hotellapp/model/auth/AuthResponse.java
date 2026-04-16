@@ -1,4 +1,4 @@
-package com.example.hotellapp.model;
+package com.example.hotellapp.model.auth;
 
 public class AuthResponse {
     private String access_token;

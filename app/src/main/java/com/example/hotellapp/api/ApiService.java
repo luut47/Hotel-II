@@ -1,9 +1,9 @@
 package com.example.hotellapp.api;
 
-import com.example.hotellapp.model.AuthResponse;
-import com.example.hotellapp.model.LoginRequest;
-import com.example.hotellapp.model.RegisterRequest;
-import com.example.hotellapp.model.User;
+import com.example.hotellapp.model.auth.AuthResponse;
+import com.example.hotellapp.model.auth.LoginRequest;
+import com.example.hotellapp.model.auth.RegisterRequest;
+import com.example.hotellapp.model.auth.User;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

@@ -1,4 +1,4 @@
-package com.example.hotellapp.activities;
+package com.example.hotellapp.activities.auth;
 
 import android.os.Bundle;
 import android.widget.TextView;
@@ -6,7 +6,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hotellapp.R;
-import com.example.hotellapp.model.User;
+import com.example.hotellapp.model.auth.User;
 import com.example.hotellapp.utils.SessionManager;
 
 public class GuestHomeActivity extends AppCompatActivity {

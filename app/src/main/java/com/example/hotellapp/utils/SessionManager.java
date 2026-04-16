@@ -2,7 +2,7 @@ package com.example.hotellapp.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.example.hotellapp.model.User;
+import com.example.hotellapp.model.auth.User;
 
 public class SessionManager {
     private static final String PREF_NAME = "hotel_app_session";

@@ -1,4 +1,4 @@
-package com.example.hotellapp.model;
+package com.example.hotellapp.model.auth;
 
 public class LoginRequest {
     private String email;

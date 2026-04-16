@@ -1,4 +1,4 @@
-package com.example.hotellapp.activities;
+package com.example.hotellapp.activities.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,14 +9,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.hotellapp.R;
 import com.example.hotellapp.api.RetrofitClient;
-import com.example.hotellapp.model.AuthResponse;
-import com.example.hotellapp.model.RegisterRequest;
+import com.example.hotellapp.model.auth.AuthResponse;
+import com.example.hotellapp.model.auth.RegisterRequest;
 import com.example.hotellapp.utils.RoleRouter;
 import com.example.hotellapp.utils.SessionManager;
 
