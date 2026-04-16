@@ -1,4 +1,6 @@
-package com.example.hotellapp.model.auth;
+package com.example.hotellapp.model.auth.response;
+
+import com.example.hotellapp.model.auth.User;
 
 public class AuthResponse {
     private String access_token;

@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hotellapp.R;
 import com.example.hotellapp.api.RetrofitClient;
-import com.example.hotellapp.model.auth.AuthResponse;
-import com.example.hotellapp.model.auth.RegisterRequest;
+import com.example.hotellapp.model.auth.response.AuthResponse;
+import com.example.hotellapp.model.auth.request.RegisterRequest;
 import com.example.hotellapp.utils.RoleRouter;
 import com.example.hotellapp.utils.SessionManager;
 
